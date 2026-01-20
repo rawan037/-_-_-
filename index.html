@@ -6,30 +6,7 @@
   <title>VeggiStore | متجر خضار إلكتروني</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    /* صورة المدير – هاتف فقط */
-.mobile-admin-avatar {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .mobile-admin-avatar {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 9999;
-  }
-
-  .mobile-admin-avatar img {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    object-fit: cover;
-    background: #2e7d32;
-  }
-}
+   
 
     :root{
       --green:#2e7d32;
@@ -89,12 +66,33 @@
     footer{
       background:var(--dark-green);color:#fff;text-align:center;padding:20px;margin-top:40px
     }
+    .mobile-admin-avatar { display: none; }
+
+@media (max-width: 768px) {
+  .mobile-admin-avatar {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .mobile-admin-avatar img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,.25);
+  }
+}
+
   </style>
 </head>
 <body>
 <!-- صورة المدير (تظهر على الهاتف فقط) -->
 <div class="mobile-admin-avatar">
-  <img src="images/1.png" alt="المدير">
+  <img src="" alt="المدير">
 </div>
 
 <header>
