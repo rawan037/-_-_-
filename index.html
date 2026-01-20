@@ -6,6 +6,31 @@
   <title>VeggiStore | متجر خضار إلكتروني</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* صورة المدير – هاتف فقط */
+.mobile-admin-avatar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-admin-avatar {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .mobile-admin-avatar img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    object-fit: cover;
+    background: #2e7d32;
+  }
+}
+
     :root{
       --green:#2e7d32;
       --light-green:#66bb6a;
@@ -67,9 +92,14 @@
   </style>
 </head>
 <body>
+<!-- صورة المدير (تظهر على الهاتف فقط) -->
+<div class="mobile-admin-avatar">
+  <img src="لقطة الشاشة 2026-01-20 093523.jpg" alt="المدير">
+</div>
 
 <header>
-  <h1>VeggiStore</h1>
+  <h1>أسواق دير العسل للخضار والفواكه </h1>
+  <h2>بادارة :ضياء الدين ابراهيم بني عامر </h2>
   <p>نظام متجر خضار جاهز للبيع – موقع احترافي + لوحة تحكم</p>
   <a href="#products" class="btn">اطلب بكل سهولة</a>
 </header>
@@ -123,7 +153,7 @@
 </section>
 
 <footer>
-  <p>© 2026 VeggiStore – جميع الحقوق محفوظة</p>
+  <p>© 2026 اسواق دير العسل للخضار والفواكة – جميع الحقوق محفوظة</p>
 </footer>
 
 </body>
