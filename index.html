@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VeggiStore | متجر خضار إلكتروني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#2e7d32;
+      --light-green:#66bb6a;
+      --dark-green:#1b5e20;
+      --blue:#0d47a1;
+      --bg:#f4f7f4;
+      --orange:#ff9800;
+    }
+    *{box-sizing:border-box;font-family:'Cairo',sans-serif}
+    body{margin:0;background:var(--bg);color:#222}
+    header{
+      background:linear-gradient(135deg,var(--dark-green),var(--green));
+      color:#fff;padding:40px 20px;text-align:center
+    }
+    header h1{margin:0;font-size:36px}
+    header p{margin:10px 0 20px}
+    .btn{
+      display:inline-block;background:var(--orange);color:#fff;
+      padding:14px 30px;border-radius:30px;text-decoration:none;font-weight:700
+    }
+    .features{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;padding:40px;max-width:1100px;margin:auto
+    }
+    .feature{
+      background:#fff;border-radius:16px;padding:20px;text-align:center;
+      box-shadow:0 8px 20px rgba(0,0,0,.08)
+    }
+    .feature h3{margin-top:10px;color:var(--green)}
+    .section{
+      max-width:1100px;margin:40px auto;padding:0 20px
+    }
+    .section h2{color:var(--dark-green);margin-bottom:20px}
+    .products{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px
+    }
+    .product{
+      background:#fff;border-radius:16px;padding:15px;box-shadow:0 6px 16px rgba(0,0,0,.08)
+    }
+    .product img{width:100%;border-radius:12px}
+    .product h4{margin:10px 0 5px}
+    .product button{
+      width:100%;border:none;background:var(--green);color:#fff;
+      padding:10px;border-radius:10px;font-size:15px
+    }
+    .admin{
+      background:#fff;border-radius:20px;padding:20px;
+      box-shadow:0 10px 24px rgba(0,0,0,.1)
+    }
+    .admin-grid{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px
+    }
+    .stat{
+      background:var(--light-green);color:#fff;border-radius:14px;padding:20px
+    }
+    footer{
+      background:var(--dark-green);color:#fff;text-align:center;padding:20px;margin-top:40px
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VeggiStore</h1>
+  <p>نظام متجر خضار جاهز للبيع – موقع احترافي + لوحة تحكم</p>
+  <a href="#products" class="btn">اطلب بكل سهولة</a>
+</header>
+
+<section class="features">
+  <div class="feature">
+    <h3>موقع احترافي</h3>
+    <p>واجهة سهلة ومتجاوبة لعرض الخضروات</p>
+  </div>
+  <div class="feature">
+    <h3>لوحة تحكم</h3>
+    <p>إدارة المنتجات والطلبات</p>
+  </div>
+  <div class="feature">
+    <h3>تتبع الطلبات</h3>
+    <p>قيد التحضير – في الطريق – تم التسليم</p>
+  </div>
+  <div class="feature">
+    <h3>الدفع</h3>
+    <p>دفع عند الاستلام أو إلكتروني</p>
+  </div>
+</section>
+
+<section id="products" class="section">
+  <h2>المنتجات</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" />
+      <h4>طماطم</h4>
+      <p>3.50$</p>
+      <button>أضف إلى السلة</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1582515073490-dc798b83add3" />
+      <h4>بروكلي</h4>
+      <p>2.00$</p>
+      <button>أضف إلى السلة</button>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>لوحة التحكم (نموذج)</h2>
+  <div class="admin">
+    <div class="admin-grid">
+      <div class="stat">إجمالي الطلبات: 152</div>
+      <div class="stat">الأرباح: $4230</div>
+      <div class="stat">طلبات قيد التنفيذ: 5</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 VeggiStore – جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
